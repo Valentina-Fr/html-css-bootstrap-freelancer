@@ -9,19 +9,23 @@ header {
 }
 
 main {
-    min-height: 300px;
-    border: 2px solid black;
+    border: 2px solid blue;
 }
 
 .ms-row {
-    min-height: 100px;
     border: 2px solid red;
 }
-
 
 .ms-col {
     min-height: 100px;
     border: 2px solid grey;
 }
 
+#contact {
+    min-height: 100px;
+}
 
+footer {
+    min-height: 100px;
+    border: 2px solid black; 
+}
