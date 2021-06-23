@@ -1,6 +1,7 @@
-header {
-    min-height: 80px;
-    border: 2px solid black;
+/* Header */
+
+#main-menu {
+    background-color: #2c3e51;
 }
 
 .spotlight {

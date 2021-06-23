@@ -9,13 +9,33 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header></header>
-    <div class="spotlight">
-        <h1>Start Bootstrap</h1>
-    </div>
+    <header>
+        <nav id="main-menu" class="navbar navbar-expand-lg navbar-dark text-uppercase">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Start Bootstrap</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse flex-grow-0" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link text-white" href="#">Portfolio</a>
+                  <a class="nav-link text-white" href="#">About</a>
+                  <a class="nav-link text-white" href="#">Contact</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <section class="container-fluid spotlight">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </section>
     <main>
         <section class="container" id="portfolio">
-            <h2>Portfolio</h2>
+            <div class="row">
+                <div class="col"></div>
+            </div>
             <div class="ms-row row">
                 <div class="ms-col col-12 col-md-6 col-lg-4">
                     Immagine
@@ -38,18 +58,22 @@
             </div>
         </section>
         <section class="container" id="about">
-            <h2>About</h2>
+            <div class="row">
+                <div class="col"></div>
+            </div>
             <div class="ms-row row">
                 <div class="ms-col offset-md-1 col-md-5 col-sm-6"></div>
                 <div class="ms-col col-md-5 col-sm-6"></div>
             </div>
         </section>
         <section class="container" id="contact">
-            <h2>Contact me</h2>
+            <div class="row">
+                <div class="ms-col offset-md-1 col-md-10 col-sm-12"></div>
+            </div>
         </section>
     </main>
     <footer>
-        <div class="container">
+        <section class="container">
             <div class="ms-row row">
                 <div class="ms-col col-12 col-md-4">
                     Location
@@ -61,10 +85,10 @@
                     About freelancer
                 </div>
             </div>
-            <div id="copyright">
+            <section class="container-fluid" id="copyright">
                 Copyright
-            </div>
-        </div>
+            </section>
+        </section>
     </footer> 
 </body>
 </html>
