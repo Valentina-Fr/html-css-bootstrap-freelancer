@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Start Bootstrap</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
         <nav id="main-menu" class="navbar navbar-expand-lg navbar-dark text-uppercase">
             <div class="container-fluid">
@@ -27,7 +29,9 @@
             </div>
           </nav>
     </header>
-    <section class="container-fluid spotlight">
+
+    <!-- Spotlight -->
+    <section class="container-fluid spotlight pt-5 pb-5">
         <div class="row">
             <div class="col text-uppercase">
                 <img src="./img/avatar.svg" alt="Avatar">
@@ -39,17 +43,20 @@
             </div>
         </div>
     </section>
+    
+    <!-- Main -->
     <main>
-        <section class="container" id="portfolio">
+        <!-- Portfolio -->
+        <section class="container pt-5 pb-5" id="portfolio">
             <div class="row">
                 <div class="col">
-                    <h2 class="text-dark text-uppercase mt-5">Portfolio</h2>
+                    <h2 class="text-dark text-uppercase">Portfolio</h2>
                     <hr class="d-inline-block rounded bg-dark"> 
                     <i class="bi bi-star-fill text-dark"></i>
                     <hr class="hr d-inline-block rounded bg-dark">
                 </div>
             </div>
-            <div class="row g-3 mb-5">
+            <div class="row g-3">
                 <div class="col-12 col-md-6 col-lg-4">
                     <img class="ms-img rounded" src="./img/cabin.png" alt="Cabin">
                 </div>
@@ -70,11 +77,13 @@
                 </div>
             </div>
         </section>
-        <section id="about">
+
+        <!-- About -->
+        <section class="pt-5 pb-5" id="about">
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <h2 class="mt-5 text-uppercase">About</h2>
+                        <h2 class="text-uppercase">About</h2>
                         <hr class="hr d-inline-block rounded"> 
                         <i class="bi bi-star-fill"></i>
                         <hr class="d-inline-block rounded">
@@ -88,32 +97,66 @@
                         Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point. 
                     </div>
                 </div>
-                <button type="button" class="btn btn-outline-light mt-5 mb-5"><i class="bi bi-download"></i>&nbsp;Download</button>
+                <button type="button" class="btn btn-outline-light mt-5"><i class="bi bi-download"></i>&nbsp;Download</button>
             </div>
         </section>
-        <section class="container" id="contact">
+
+        <!-- Contact -->
+        <section class="container pt-5 pb-5" id="contact">
             <div class="row">
-                <div class="offset-md-1 col-md-10 col-sm-12"></div>
+                <div class="offset-md-1 col-md-10 col-sm-12">
+                    <h2 class="text-dark text-uppercase">Contact Me</h2>
+                    <hr class="d-inline-block rounded bg-dark"> 
+                    <i class="bi bi-star-fill text-dark"></i>
+                    <hr class="hr d-inline-block rounded bg-dark">
+                    <form>
+                        <div class="form-group">
+                          <label for="name">Name</label>
+                          <input type="text" class="form-control" id="name" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                          <label for="email">E-mail</label>
+                          <input type="email" class="form-control" id="email" placeholder="Email Address">
+                        </div>
+                        <div class="form-group">
+                          <label for="phone">Phone</label>
+                          <input type="tel" class="form-control" id="phone" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-3">Send</button>
+                        </form>
+                </div>
             </div>
         </section>
     </main>
+
+    <!-- Footer -->
     <footer>
         <section class="container">
-            <div class="row">
+            <div class="row g-4">
                 <div class="col-12 col-md-4">
-                    Location
+                    <h5 class="text-uppercase">Location</h5>
+                    <p>2215 John Daniel Drive Clark, MO 54243</p>
                 </div>
                 <div class="col-12 col-md-4">
-                    Around the web
+                    <h5 class="text-uppercase">Around the web</h5>
+                    <a class="btn btn-outline-light rounded-circle" href="#" role="button"><i class="bi bi-facebook"></i></a>
+                    <a class="btn btn-outline-light rounded-circle" href="#" role="button"><i class="bi bi-google"></i></a>
+                    <a class="btn btn-outline-light rounded-circle" href="#" role="button"><i class="bi bi-twitter"></i></a>
+                    <a class="btn btn-outline-light rounded-circle" href="#" role="button"><i class="bi bi-linkedin"></i></a>
                 </div>
                 <div class="col-12 col-md-4">
-                    About freelancer
+                    <h5 class="text-uppercase">About freelancer</h5>
+                    <p>Freelance is a free to use, open source Bootstrap theme created by <a class="ms-a" href="#">Start Bootstrap</a>.</p>
                 </div>
             </div>
-            <section class="container-fluid" id="copyright">
-                Copyright
-            </section>
         </section>
+            <section class="container-fluid pt-3 pb-3" id="copyright">
+                Copyright&nbsp;<i class="far fa-copyright"></i>&nbsp;Your Website 2019
+            </section>
     </footer> 
 </body>
 </html>
